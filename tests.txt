@@ -1,0 +1,23 @@
+use mycarsdb;
+#select * from ads;
+#1
+#select * from users where Username = "Mohamed";
+#select * from usersprefs where Username = "Mohamed";
+#2
+#select * from ads where ID = 183727322;
+#3
+#Select Review from ads where ID = 183727322;
+#4
+#select AVG(Rating) from ads where SellerPhone = 201099953506;
+#5
+#select * from ads where Brand = "Peugeot" AND BodyType = "Sedan" AND Year = 1970 AND Location = "Mokattam"; #GROUP BY Model;
+#6
+#select * from ads where Location = "Mokattam" AND Price >= 430000 AND Price <= 1300000;
+#7
+#select Location, COUNT(*), AVG(Price) from ads WHERE Brand = "BMW" GROUP BY Location ORDER BY COUNT(*) DESC LIMIT 5;
+#8
+#select SellerPhone, Name, COUNT(*), AVG(Price) from ads inner join sellers on ads.SellerPhone = sellers.Phone GROUP BY SellerPhone, Name ORDER BY COUNT(*) DESC LIMIT 5;
+#9   01200006517
+#select * from ads WHERE SellerPhone = 201200006517;
+#10
+#select Brand, Model, COUNT(*), AVG(Price) from ads WHERE Year = 1970 GROUP BY Brand, Model ORDER BY COUNT(*) DESC LIMIT 5;
